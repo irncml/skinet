@@ -7,3 +7,4 @@ appsettings.Development.json
 *.db-wal
 wwwroot/images
 *.png
+/Document

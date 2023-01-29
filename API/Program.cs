@@ -34,6 +34,7 @@ app.UseSwaggerDocumentation();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseStaticFiles();
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
