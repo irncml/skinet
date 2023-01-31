@@ -5,16 +5,16 @@
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-between" id="navbarsExample05">
-        <img src="/assets/images/logo.png" style="max-height: 70px;" alt="logo">
+        <img class="logo" src="/assets/images/logo.png" style="max-height: 70px;" alt="logo" routerLink="/">
         <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase" style="font-size: larger;">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+            <a class="" routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="" routerLink="/contact" routerLinkActive="active">Contact</a>
           </li>
         </ul>
         <div class="d-flex align-items-center">
