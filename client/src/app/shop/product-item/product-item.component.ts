@@ -4,8 +4,15 @@ import { IProduct } from 'src/app/shared/models/product';
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
-  styleUrls: ['./product-item.component.css']
+  styleUrls: ['./product-item.component.scss']
 })
 export class ProductItemComponent {
   @Input() product!: IProduct;
+
+
+
+
+  addItemToBasket() {
+    //this.product && this.basketService.addItemToBasket(this.product);
+  }
 }
