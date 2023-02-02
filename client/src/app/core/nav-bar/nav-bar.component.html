@@ -18,10 +18,10 @@
           </li>
         </ul>
         <div class="d-flex align-items-center">
-            <a class="position-relative">
+            <a routerLink="/basket" class="position-relative">
                 <i class="fa fa-shopping-cart fa-2x me-3 text-dark"></i>
-                <span class=" cart-no">
-                    5
+                <span *ngIf="(basketService.basketSource$ | async) as basket" class=" cart-no">
+                    {{ getCount(basket.items) }}
                 </span>
             </a>
             <a class="btn btn-outline-secondary">Login</a>

@@ -13,8 +13,8 @@ import { ShopService } from './shop.service';
 export class ShopComponent implements OnInit {
   @ViewChild('search') searchTerm!: ElementRef;
   products!: IProduct[];
-  brands!: IBrand[];
-  types!: IType[];
+  brands: IBrand[] = [];
+  types: IType[] = [];
   shopParams = new ShopParams();
   totalCount = 0;
 
