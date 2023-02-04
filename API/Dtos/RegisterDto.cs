@@ -16,6 +16,9 @@ namespace API.Dtos
         public string Email { get; set; }
 
         [Required]
+        //[StringLength(8, MinimumLength = 3)]
+        [RegularExpression("^[0-9]{5,}$",
+             ErrorMessage = "Password must have 5 non alphanumeric and at least 5 characters")]
         // [RegularExpression("(?=^.{6,10}$)(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;'?/&gt;.&lt;,])(?!.*\\s).*$",
         //     ErrorMessage = "Password must have 1 Uppercase, 1 Lowercase, 1 number, 1 non alphanumeric and at least 6 characters")]
         public string Password { get; set; }
